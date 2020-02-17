@@ -1,0 +1,49 @@
+.demo
+    position: relative
+    padding-top: 320px
+    &__wrap
+        margin-bottom: 320px
+        display: flex
+        justify-content: space-between
+    &__info-block
+        width: 40%
+        transform: translateX(-130%)
+        transition: 1s
+    &__description
+        margin-bottom: 115px
+    &__img-block
+        background: url('../img/demo/demo-img.png') no-repeat center
+        background-size: contain
+        transform: translateX(130%)
+        flex-basis: 50%
+    &__left-obj 
+        left: 0
+        top: 35%
+        transform: translateX(-130%)
+    &__right-obj 
+        right: 3%
+        top: 40%
+        transform: translateX(130%)
+    &__line 
+        bottom: 0
+        right: 10% 
+        transform: translateX(130%)
+.active 
+    transition: 1s
+    transform: translateX(0)
+
+
+@media (max-width: 1280px)
+    .demo
+        padding-top: 120px
+        &__wrap
+            margin-bottom: 120px
+@media (max-width: 768px)
+    .demo
+        padding-top: 50px
+        &__img-block
+            display: none
+        &__info-block
+            width: 100%
+        &__description
+            margin-bottom: 50px

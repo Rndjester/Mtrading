@@ -1,0 +1,44 @@
+.experience
+    padding-top: 240px 
+    padding-bottom: 370px
+    background-color: #fefcfd
+    &__wrap
+        display: flex
+        justify-content: space-between
+    &__info-block
+        padding: 100px 0 140px 0
+        transform: translateX(-130%)
+    &__description
+        margin-bottom: 105px 
+    &__img-block
+        background: url('../img/experience/bg-1.png') no-repeat center
+        flex-basis: 55%
+        background-size: contain
+        transition: .1s
+        transform: translateX(130%)
+.active 
+    transition: 1s
+    transform: translateX(0)
+@media (max-width: 1280px)
+    .experience
+        padding-top: 120px
+        padding-bottom: 120px
+        &__info-block
+        padding: 50px 0 70px 0
+@media (max-width: 768px)
+    .experience
+        padding-top: 50px
+        padding-bottom: 50px
+        &__info-block
+            padding: 0
+        &__description
+            margin-bottom: 50px 
+@media (max-width: 550px)
+    .experience
+        &__wrap
+            flex-direction: column
+        &__img-block
+            margin-top: 30px
+            min-width: 100%
+            min-height: 400px
+

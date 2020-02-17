@@ -1,0 +1,60 @@
+@font-face 
+    font-family: 'OpenSans'
+    src: url('../fonts/OpenSans-Bold.eot')
+    src: url('../fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype')
+    src: url('../fonts/OpenSans-Bold.svg#OpenSans-Bold') format('svg')
+    src: url('../fonts/OpenSans-Bold.ttf') format('truetype')
+    src: url('../fonts/OpenSans-Bold.woff') format('woff')
+    src: url('../fonts/OpenSans-Bold.woff2') format('woff2')
+    font-weight: bold
+    font-style: normal
+    
+@font-face 
+    font-family: 'OpenSans'
+    src: url('../fonts/OpenSans-Regular.eot')
+    src: url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype')
+    src: url('../fonts/OpenSans-Regular.svg#OpenSans-Regular') format('svg')
+    src: url('../fonts/OpenSans-Regular.ttf') format('truetype')
+    src: url('../fonts/OpenSans-Regular.woff') format('woff')
+    src: url('../fonts/OpenSans-Regular.woff2') format('woff2')
+    font-weight: normal
+    font-style: normal 
+@font-face 
+    font-family: 'OpenSans'
+    src: url('../fonts/OpenSans-SemiBold.eot')
+    src: url('../fonts/OpenSans-SemiBold.eot?#iefix') format('embedded-opentype')
+    src: url('../fonts/OpenSans-SemiBold.svg#OpenSans-SemiBold') format('svg')
+    src: url('../fonts/OpenSans-SemiBold.ttf') format('truetype')
+    src: url('../fonts/OpenSans-SemiBold.woff') format('woff')
+    src: url('../fonts/OpenSans-SemiBold.woff2') format('woff2')
+    font-weight: 600
+    font-style: normal
+@font-face 
+    font-family: 'GothamPro'
+    src: url('../fonts/GothamPro-Bold.eot')
+    src: url('../fonts/GothamPro-Bold.eot?#iefix') format('embedded-opentype')
+    src: url('../fonts/GothamPro-Bold.svg#GothamPro-Bold') format('svg')
+    src: url('../fonts/GothamPro-Bold.ttf') format('truetype')
+    src: url('../fonts/GothamPro-Bold.woff') format('woff')
+    src: url('../fonts/GothamPro-Bold.woff2') format('woff2')
+    font-weight: bold
+    font-style: normal
+@font-face 
+    font-family: 'GothamPro'
+    src: url('../fonts/GothamPro-Light.eot')
+    src: url('../fonts/GothamPro-Light.eot?#iefix') format('embedded-opentype')
+    src: url('../fonts/GothamPro-Light.svg#GothamPro-Light') format('svg')
+    src: url('../fonts/GothamPro-Light.ttf') format('truetype')
+    src: url('../fonts/GothamPro-Light.woff') format('woff')
+    src: url('../fonts/GothamPro-Light.woff2') format('woff2')
+    font-weight: 200
+    font-style: normal
+
+@mixin openSans($fontSize, $fontWeight:normal) 
+    font-family: 'OpenSans'
+    font-weight: $fontWeight
+    font-size: $fontSize
+@mixin GothamPro($fontSize, $fontWeight:light) 
+    font-family: 'GothamPro'
+    font-weight: $fontWeight
+    font-size: $fontSize
